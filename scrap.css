@@ -1,0 +1,111 @@
+.class-container{
+       
+    display: grid;
+    gap: .5;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-y: scroll;
+
+    
+    margin-top: 10px;
+    width: 100%;
+    
+font-family: fantasy;
+
+
+.class-container{
+    margin-top: 10px;
+    width: 100%;
+    display:grid;
+grid-template-columns: repeat(1, auto-fit);
+grid-auto-rows: 200px 200px 200px 200px;
+font-family: fantasy;
+}
+.bard-container{
+    width: 100vw;
+    align-self: stretch;
+    background: rgb(37, 37, 80);
+    
+   
+}
+.bard-link{
+  
+    
+    
+   
+    
+}
+.rogue-container{
+width: 100vw;
+align-self: stretch;
+background: rgb(69, 2, 2);
+}
+.warrior-container{
+width: 100vw;
+align-self: stretch;
+background: black;
+}
+.druid-container{
+width: 100vw;
+align-self: stretch;
+background: rgb(21, 62, 21);
+}
+
+
+@media (orientation:portrait){
+  
+    .xp-cal{
+       
+        
+    }
+    .side-bar .side-nav{
+        
+         }
+   
+     .body{
+        display: flex;
+     }
+    .class-container{
+       
+       
+        gap: .5;
+        
+
+        
+        margin-top: 10px;
+        width: 100%;
+        
+    font-family: fantasy;
+    
+    
+    
+    }
+    .bard-container{
+        
+        width: 100%;
+        
+        padding: 30px;
+        background: rgb(37, 37, 80);
+        
+       
+    }
+    .bard-link{
+      
+        
+        
+       
+        
+    }
+   .rogue-container{
+    padding: 30px;
+    background: rgb(69, 2, 2);
+   }
+   .warrior-container{
+    padding: 30px;
+    background: black;
+   }
+   .druid-container{
+    padding: 30px;
+    background: rgb(21, 62, 21);
+   }
+}

@@ -1,0 +1,89 @@
+:root{
+    --clr-primary:;
+    --clr-secondary:;
+    --ff-primary:'Papyrus', fantasy;
+    --ff-secondary:;
+    --ff-smaller-text:'';
+}
+*, *::before, 
+*::after{
+    box-sizing: border-box;
+}
+* { 
+     margin: 0;
+     font-family: var(--ff-primary);
+    
+   }
+   body{
+    width: 100%;
+    font-size:;
+    line-height: 1.3;
+   }
+   .header-container{
+    display: flex;
+    border: 2px solid purple;
+    padding: 1.25rem 1.75rem 5rem 1.25rem;
+    
+   }
+   .main-header-title{
+    border: 1px solid darkolivegreen;
+    text-align:center;
+    color: rgba(198, 139, 63, 0.844);
+    padding: .5rem;
+    
+   
+   
+    
+ }
+ .class-h1-container{
+    
+    font-style: oblique;
+    border: 2px solid rgb(222, 5, 5);
+    color: #4f2903d7;
+    padding-top: .5rem;
+    text-align: left;
+ }
+   .side-bar{
+    display:none; /* while setting up page layout until I get the hamburger
+    menu or work on layout for large screens side nave */
+    
+   }
+   .main-content-container{
+   
+   }
+   .class-container{
+    display: grid;
+    grid-template-columns:repeat(autofit, 1fr);
+    gap: 1rem;
+    border: 2px solid green;
+    margin-inline: auto;
+    
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+   }
+  
+   .class-container > * {
+    border: 1px solid blue;
+    padding: 3.5rem 0;
+    line-height:1.2;
+    text-align: center;
+    
+   }
+
+@media screen and (min-width:768px)  {
+    .class-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        min-height: 60vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+       
+
+         }
+    .class-container > * {
+        max-width:20vw;
+    }
+    
+    
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game night adventure</title>
+    <link rel="stylesheet" href="mainstyle.css"/>
+    <script src="main.js" async></script>
+</head>
+<body>
+    <header class="header-container">
+   <aside class="side-bar"> 
+    <nav class="side-nav">
+        
+            <a href="index.html">Home</a>
+            <a href="quest.html">Quests</a>
+            <a href="character.html">Character</a>
+            <!--Index-->
+       
+    </nav>
+    <form class="xp-cal" action="results.html" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+     </div>
+        <div>
+            <label for="age">DoB</label>
+          <input type="date" name="age" id="age" min="2000-09-12">
+    </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+         <!--user enters name and bday--> 
+    </form>
+</aside>
+
+<h1 class="main-header-title">Let the Adventure Begin </h1>
+</header>
+
+<main class="main-content-container">
+ <div class="class-h1-container">
+  <h1 class="choose-class">Choose your class</h1>
+</div>
+  <div class="class-container">
+     
+       <div class="bard-container">
+         <h2 class="class-name"> 
+            <a class="bard-link" href="bard.html">The Bard</a>
+        </h2>
+        </div>
+       <div class="rogue-container">
+         <h2 class="class-name">
+         <a class="rogue-link" href="rogue.html">The Rogue</a>
+        </h2>
+        </div>
+        <div class="warrior-container">
+          <h2 class="class-name">
+            <a class="warrior-link" href="warrior.html">The Warrior</a>
+           </h2>
+        </div>
+      <div class="druid-container">
+        <h2 class="class-name">
+         <a class="druid-link" href="druid.html">The Druid</a>
+        </h2>
+        </div> 
+  </div> 
+</main>   
+    
+</body>
+
+</html>
