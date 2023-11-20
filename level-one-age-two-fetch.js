@@ -38,6 +38,6 @@ element.addEventListener('click', (event) => {
                 const markup = `<li>${allowedGames.name.bggrating}</li>`
             });
         })
-        catch(error => console.log(error));
+        .catch(error => console.log(error));
 
 })
