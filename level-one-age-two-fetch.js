@@ -31,8 +31,12 @@ const allowedGames = [
 const element = document.getElementById('age2button');
 element.addEventListener('click', (event) => {
     fetch('https://boardgamegeek.com/xmlapi/boardgame/41302,314348,159536,131497,359975,400708,321711')
-        .then( res => res.text());
-        .then( xml => console.log(xml));
+        .then( res => {
+            res.text();
+        })
+        .then( xml => {
+             console.log(xml);
+        })
         .then(data => {
             data.forEach(allowedGames[0]=> {
                 const markup = `<li>${allowedGames.name.bggrating}</li>`
