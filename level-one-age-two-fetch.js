@@ -38,8 +38,10 @@ element.addEventListener('click', (event) => {
              console.log(xml);
         })
         .then(data => {
-            data.forEach(allowedGames[0]=> {
-                const markup = `<li>${allowedGames.name.bggrating}</li>`
+            data.forEach(allowedGames[0] => {
+                const markup = `<li>${allowedGames.name.bggrating}</li>`;
+
+                document.querySelector('p').insertAdjacentHTML('start', markup);
             });
         })
         .catch(error => console.log(error));
